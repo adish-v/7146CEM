@@ -1,0 +1,25 @@
+{
+ "baseUrl":"support/slwebview_files",
+ "homeHid":1,
+ "initialElement":"",
+ "sections":[
+  {
+   "hid":1,
+   "sid":"pid_controller",
+   "name":"pid_controller",
+   "fullname":"pid_controller",
+   "label":"pid_controller",
+   "parent":0,
+   "descendants":[
+   ],
+   "hierarchyUrl":"support/slwebview_files/pid_controller_h_1.json",
+   "backingUrl":"support/slwebview_files/pid_controller_m.json"
+  }
+ ],
+ "optViews":[
+ ],
+ "display":{
+  "informer":false
+ },
+ "iconsUrl":"support/slwebview_files/pid_controller_icons.css"
+}
