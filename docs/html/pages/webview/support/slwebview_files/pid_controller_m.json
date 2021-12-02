@@ -1,0 +1,39 @@
+[
+ {
+  "sid":"pid_controller",
+  "className":"Simulink.BlockDiagram",
+  "icon":"pid_controller0",
+  "name":"pid_controller",
+  "label":"pid_controller",
+  "parent":"",
+  "inspector":{
+   "params":[
+    "ModelVersion",
+    "LastModifiedDate",
+    "LibraryLinkDisplay",
+    "ModelBrowserVisibility",
+    "Dirty",
+    "Description"
+   ],
+   "values":[
+    "1.84",
+    "Thu Dec 02 16:19:56 2021",
+    "disabled",
+    "off",
+    "off",
+    ""
+   ],
+   "tabs":[
+   ],
+   "tabs_idx":[
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ }
+]
