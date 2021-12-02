@@ -1,0 +1,9 @@
+.pid_controller0,
+.pid_controller1,
+.pid_controller2,
+.pid_controller3 { background-image: url('pid_controller_icons.png'); width: 16px; height: 16px; }
+
+.pid_controller0 { background-position: -0px; }
+.pid_controller1 { background-position: -16px; }
+.pid_controller2 { background-position: -32px; }
+.pid_controller3 { background-position: -48px; }
