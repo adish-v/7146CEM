@@ -8,7 +8,7 @@
    "sid":"pid_controller",
    "name":"pid_controller",
    "fullname":"pid_controller",
-   "label":"pid_controller",
+   "label":"pid_controller*",
    "parent":0,
    "descendants":[
    ],

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'pid_controller'.
  *
- * Model version                  : 1.84
+ * Model version                  : 1.85
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Thu Dec  2 18:26:00 2021
+ * C/C++ source code generated on : Fri Dec  3 22:07:36 2021
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -63,6 +63,14 @@ extern ExtY_pid_controller_T pid_controller_Y;
 extern void pid_controller_initialize(void);
 extern void pid_controller_step(void);
 extern void pid_controller_terminate(void);
+
+/*-
+ * These blocks were eliminated from the model due to optimizations:
+ *
+ * Block '<Root>/Kd' : Eliminated nontunable gain of 1
+ * Block '<Root>/Ki' : Eliminated nontunable gain of 1
+ * Block '<Root>/Kp' : Eliminated nontunable gain of 1
+ */
 
 /*-
  * The generated code includes comments that allow you to trace directly
