@@ -1,29 +1,29 @@
 function RTW_Sid2UrlHash() {
 	this.urlHashMap = new Array();
 	/* <Root>/e(k) */
-	this.urlHashMap["pid_controller:2"] = "pid_controller.c:44,47,51,55,59,61&pid_controller.h:45";
+	this.urlHashMap["pid_controller:2"] = "pid_controller.c:43,46,50,56,57,61,63&pid_controller.h:45";
 	/* <Root>/1 over Ts */
-	this.urlHashMap["pid_controller:17"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=pid_controller:17";
+	this.urlHashMap["pid_controller:17"] = "pid_controller.c:49,57";
 	/* <Root>/Add Block 1 */
-	this.urlHashMap["pid_controller:9"] = "pid_controller.c:41,47";
+	this.urlHashMap["pid_controller:9"] = "pid_controller.c:41,46";
 	/* <Root>/Add Block 2 */
-	this.urlHashMap["pid_controller:18"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=pid_controller:18";
+	this.urlHashMap["pid_controller:18"] = "pid_controller.c:51,56,57";
 	/* <Root>/Add Block 3 */
-	this.urlHashMap["pid_controller:6"] = "pid_controller.c:52,55,56";
+	this.urlHashMap["pid_controller:6"] = "pid_controller.c:52,57,58";
 	/* <Root>/Kd */
-	this.urlHashMap["pid_controller:20"] = "msg=rtwMsg_CodeGenerationReducedBlock&block=pid_controller:20";
+	this.urlHashMap["pid_controller:20"] = "msg=rtwMsg_reducedBlock&block=pid_controller:20";
 	/* <Root>/Ki */
-	this.urlHashMap["pid_controller:8"] = "pid_controller.c:42,47";
+	this.urlHashMap["pid_controller:8"] = "msg=rtwMsg_reducedBlock&block=pid_controller:8";
 	/* <Root>/Kp */
-	this.urlHashMap["pid_controller:4"] = "pid_controller.c:50,55";
+	this.urlHashMap["pid_controller:4"] = "msg=rtwMsg_reducedBlock&block=pid_controller:4";
 	/* <Root>/Ts */
-	this.urlHashMap["pid_controller:12"] = "pid_controller.c:43,47";
+	this.urlHashMap["pid_controller:12"] = "pid_controller.c:42,46";
 	/* <Root>/Unit Delay 1 */
-	this.urlHashMap["pid_controller:42"] = "pid_controller.c:45,47,53,56&pid_controller.h:39";
+	this.urlHashMap["pid_controller:42"] = "pid_controller.c:44,46,53,58&pid_controller.h:39";
 	/* <Root>/Unit Delay 2 */
-	this.urlHashMap["pid_controller:41"] = "pid_controller.c:58,61&pid_controller.h:40";
+	this.urlHashMap["pid_controller:41"] = "pid_controller.c:54,57,60,63&pid_controller.h:40";
 	/* <Root>/y(k) */
-	this.urlHashMap["pid_controller:3"] = "pid_controller.c:49,55&pid_controller.h:50";
+	this.urlHashMap["pid_controller:3"] = "pid_controller.c:48,56&pid_controller.h:50";
 	this.getUrlHash = function(sid) { return this.urlHashMap[sid];}
 }
 RTW_Sid2UrlHash.instance = new RTW_Sid2UrlHash();

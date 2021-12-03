@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'pid_controller'.
  *
- * Model version                  : 1.84
+ * Model version                  : 1.85
  * Simulink Coder version         : 9.6 (R2021b) 14-May-2021
- * C/C++ source code generated on : Thu Dec  2 18:26:00 2021
+ * C/C++ source code generated on : Fri Dec  3 22:07:36 2021
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -39,21 +39,23 @@ ExtY_pid_controller_T pid_controller_Y;
 void pid_controller_step(void)
 {
   /* Sum: '<Root>/Add Block 1' incorporates:
-   *  Gain: '<Root>/Ki'
    *  Gain: '<Root>/Ts'
    *  Inport: '<Root>/e(k)'
    *  UnitDelay: '<Root>/Unit Delay 1'
    */
-  pid_controller_DW.UnitDelay1_DSTATE += (0.01 * pid_controller_U.ek) * 100.0;
+  pid_controller_DW.UnitDelay1_DSTATE += 0.01 * pid_controller_U.ek;
 
   /* Outport: '<Root>/y(k)' incorporates:
-   *  Gain: '<Root>/Kp'
+   *  Gain: '<Root>/1 over Ts'
    *  Inport: '<Root>/e(k)'
+   *  Sum: '<Root>/Add Block 2'
    *  Sum: '<Root>/Add Block 3'
    *  UnitDelay: '<Root>/Unit Delay 1'
+   *  UnitDelay: '<Root>/Unit Delay 2'
    */
-  pid_controller_Y.yk = (800.0 * pid_controller_U.ek) +
-    pid_controller_DW.UnitDelay1_DSTATE;
+  pid_controller_Y.yk = ((pid_controller_U.ek -
+    pid_controller_DW.UnitDelay2_DSTATE) * 100.0) + (pid_controller_U.ek +
+    pid_controller_DW.UnitDelay1_DSTATE);
 
   /* Update for UnitDelay: '<Root>/Unit Delay 2' incorporates:
    *  Inport: '<Root>/e(k)'

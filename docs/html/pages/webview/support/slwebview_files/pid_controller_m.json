@@ -4,7 +4,7 @@
   "className":"Simulink.BlockDiagram",
   "icon":"pid_controller0",
   "name":"pid_controller",
-  "label":"pid_controller",
+  "label":"pid_controller*",
   "parent":"",
   "inspector":{
    "params":[
@@ -16,11 +16,11 @@
     "Description"
    ],
    "values":[
-    "1.84",
-    "Thu Dec 02 16:19:56 2021",
+    "1.85",
+    "Fri Dec 03 10:23:48 2021",
     "disabled",
     "off",
-    "off",
+    "on",
     ""
    ],
    "tabs":[
